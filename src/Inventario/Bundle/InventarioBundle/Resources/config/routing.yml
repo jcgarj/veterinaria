@@ -1,0 +1,19 @@
+inventario_ventas:
+    resource: "@InventarioBundle/Resources/config/routing/ventas.yml"
+    prefix:   /ventas
+
+inventario_productos:
+    resource: "@InventarioBundle/Resources/config/routing/productos.yml"
+    prefix:   /productos
+
+inventario_medicamentos:
+    resource: "@InventarioBundle/Resources/config/routing/medicamentos.yml"
+    prefix:   /medicamentos
+
+inventario_inventario:
+    resource: "@InventarioBundle/Resources/config/routing/inventario.yml"
+    prefix:   /inventario
+
+inventario_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: InventarioBundle:Default:index }

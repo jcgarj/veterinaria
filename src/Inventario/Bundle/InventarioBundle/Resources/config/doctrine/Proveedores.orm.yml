@@ -1,0 +1,32 @@
+Inventario\Bundle\InventarioBundle\Entity\Proveedores:
+    type: entity
+    table: null
+    repositoryClass: Inventario\Bundle\InventarioBundle\Entity\ProveedoresRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        regimenT:
+            type: string
+            length: '30'
+            column: regimen_t
+        rfc:
+            type: string
+            length: '20'
+        telefono:
+            type: string
+            length: '15'
+    oneToMany:    
+        Productos: 
+            targetEntity: Inventario\Bundle\InventarioBundle\Entity\Productos
+            mappedBy: Proveedores
+        Medicamentos: 
+            targetEntity: Inventario\Bundle\InventarioBundle\Entity\Medicamentos
+            mappedBy: Proveedores
+        Inventario:
+            targetEntity: Inventario\Bundle\InventarioBundle\Entity\Inventario
+            mappedBy: Proveedores
+    lifecycleCallbacks: {  }

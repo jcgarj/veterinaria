@@ -1,0 +1,30 @@
+mvz:
+    path:     /
+    defaults: { _controller: "RegistroBundle:MVZ:index" }
+
+mvz_show:
+    path:     /{id}/show
+    defaults: { _controller: "RegistroBundle:MVZ:show" }
+
+mvz_new:
+    path:     /new
+    defaults: { _controller: "RegistroBundle:MVZ:new" }
+
+mvz_create:
+    path:     /create
+    defaults: { _controller: "RegistroBundle:MVZ:create" }
+    methods:  POST
+
+mvz_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "RegistroBundle:MVZ:edit" }
+
+mvz_update:
+    path:     /{id}/update
+    defaults: { _controller: "RegistroBundle:MVZ:update" }
+    methods:  [POST, PUT]
+
+mvz_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "RegistroBundle:MVZ:delete" }
+    methods:  [POST, DELETE]

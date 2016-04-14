@@ -1,0 +1,30 @@
+cliente:
+    path:     /
+    defaults: { _controller: "RegistroBundle:cliente:index" }
+
+cliente_show:
+    path:     /{id}/show
+    defaults: { _controller: "RegistroBundle:cliente:show" }
+
+cliente_new:
+    path:     /new
+    defaults: { _controller: "RegistroBundle:cliente:new" }
+
+cliente_create:
+    path:     /create
+    defaults: { _controller: "RegistroBundle:cliente:create" }
+    methods:  POST
+
+cliente_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "RegistroBundle:cliente:edit" }
+
+cliente_update:
+    path:     /{id}/update
+    defaults: { _controller: "RegistroBundle:cliente:update" }
+    methods:  [POST, PUT]
+
+cliente_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "RegistroBundle:cliente:delete" }
+    methods:  [POST, DELETE]

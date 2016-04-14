@@ -1,0 +1,30 @@
+productos:
+    path:     /
+    defaults: { _controller: "InventarioBundle:Productos:index" }
+
+productos_show:
+    path:     /{id}/show
+    defaults: { _controller: "InventarioBundle:Productos:show" }
+
+productos_new:
+    path:     /new
+    defaults: { _controller: "InventarioBundle:Productos:new" }
+
+productos_create:
+    path:     /create
+    defaults: { _controller: "InventarioBundle:Productos:create" }
+    methods:  POST
+
+productos_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "InventarioBundle:Productos:edit" }
+
+productos_update:
+    path:     /{id}/update
+    defaults: { _controller: "InventarioBundle:Productos:update" }
+    methods:  [POST, PUT]
+
+productos_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "InventarioBundle:Productos:delete" }
+    methods:  [POST, DELETE]

@@ -1,0 +1,113 @@
+<?php
+
+namespace Inventario\Bundle\InventarioBundle\Entity;
+
+/**
+ * Ventas
+ */
+class Ventas
+{
+    /**
+     * @var integer
+     */
+    private $id;
+
+    /**
+     * @var \DateTime
+     */
+    private $fechaSalida;
+
+    /**
+     * @var integer
+     */
+    private $cantidad;
+
+    /**
+     * @var integer
+     */
+    private $total;
+
+
+    /**
+     * Get id
+     *
+     * @return integer
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * Set fechaSalida
+     *
+     * @param \DateTime $fechaSalida
+     *
+     * @return Ventas
+     */
+    public function setFechaSalida($fechaSalida)
+    {
+        $this->fechaSalida = $fechaSalida;
+
+        return $this;
+    }
+
+    /**
+     * Get fechaSalida
+     *
+     * @return \DateTime
+     */
+    public function getFechaSalida()
+    {
+        return $this->fechaSalida;
+    }
+
+    /**
+     * Set cantidad
+     *
+     * @param integer $cantidad
+     *
+     * @return Ventas
+     */
+    public function setCantidad($cantidad)
+    {
+        $this->cantidad = $cantidad;
+
+        return $this;
+    }
+
+    /**
+     * Get cantidad
+     *
+     * @return integer
+     */
+    public function getCantidad()
+    {
+        return $this->cantidad;
+    }
+
+    /**
+     * Set total
+     *
+     * @param integer $total
+     *
+     * @return Ventas
+     */
+    public function setTotal($total)
+    {
+        $this->total = $total;
+
+        return $this;
+    }
+
+    /**
+     * Get total
+     *
+     * @return integer
+     */
+    public function getTotal()
+    {
+        return $this->total;
+    }
+}
+

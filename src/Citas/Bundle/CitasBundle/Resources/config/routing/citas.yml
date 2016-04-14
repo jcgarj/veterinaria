@@ -1,0 +1,30 @@
+citas:
+    path:     /
+    defaults: { _controller: "CitasBundle:Citas:index" }
+
+citas_show:
+    path:     /{id}/show
+    defaults: { _controller: "CitasBundle:Citas:show" }
+
+citas_new:
+    path:     /new
+    defaults: { _controller: "CitasBundle:Citas:new" }
+
+citas_create:
+    path:     /create
+    defaults: { _controller: "CitasBundle:Citas:create" }
+    methods:  POST
+
+citas_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "CitasBundle:Citas:edit" }
+
+citas_update:
+    path:     /{id}/update
+    defaults: { _controller: "CitasBundle:Citas:update" }
+    methods:  [POST, PUT]
+
+citas_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "CitasBundle:Citas:delete" }
+    methods:  [POST, DELETE]

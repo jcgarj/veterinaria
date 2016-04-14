@@ -1,0 +1,30 @@
+medicamentos:
+    path:     /
+    defaults: { _controller: "InventarioBundle:Medicamentos:index" }
+
+medicamentos_show:
+    path:     /{id}/show
+    defaults: { _controller: "InventarioBundle:Medicamentos:show" }
+
+medicamentos_new:
+    path:     /new
+    defaults: { _controller: "InventarioBundle:Medicamentos:new" }
+
+medicamentos_create:
+    path:     /create
+    defaults: { _controller: "InventarioBundle:Medicamentos:create" }
+    methods:  POST
+
+medicamentos_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "InventarioBundle:Medicamentos:edit" }
+
+medicamentos_update:
+    path:     /{id}/update
+    defaults: { _controller: "InventarioBundle:Medicamentos:update" }
+    methods:  [POST, PUT]
+
+medicamentos_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "InventarioBundle:Medicamentos:delete" }
+    methods:  [POST, DELETE]

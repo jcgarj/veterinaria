@@ -1,0 +1,55 @@
+<?php
+
+namespace Inventario\Bundle\InventarioBundle\Entity;
+
+/**
+ * Inventario
+ */
+class Inventario
+{
+    /**
+     * @var integer
+     */
+    private $id;
+
+    /**
+     * @var integer
+     */
+    private $cantidadExist;
+
+
+    /**
+     * Get id
+     *
+     * @return integer
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * Set cantidadExist
+     *
+     * @param integer $cantidadExist
+     *
+     * @return Inventario
+     */
+    public function setCantidadExist($cantidadExist)
+    {
+        $this->cantidadExist = $cantidadExist;
+
+        return $this;
+    }
+
+    /**
+     * Get cantidadExist
+     *
+     * @return integer
+     */
+    public function getCantidadExist()
+    {
+        return $this->cantidadExist;
+    }
+}
+

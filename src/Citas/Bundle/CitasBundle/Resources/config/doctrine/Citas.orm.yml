@@ -1,0 +1,33 @@
+Citas\Bundle\CitasBundle\Entity\Citas:
+    type: entity
+    table: null
+    repositoryClass: Citas\Bundle\CitasBundle\Entity\CitasRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        fecha:
+            type: datetime
+        motivo:
+            type: string
+            length: '100'
+        costo:
+            type: integer
+    manyToOne:
+        Cliente:
+            targetEntity: Registro\Bundle\RegistroBundle\Entity\cliente
+            mappedBy: Citas
+        Mascota:
+            targetEntity: Registro\Bundle\RegistroBundle\Entity\Mascota
+            mappedBy: Citas
+        MVZ:
+            targetEntity: Registro\Bundle\RegistroBundle\Entity\MVZ
+            mappedBy: Citas
+    oneToMany:
+        Observaciones:
+            targetEntity: Citas\Bundle\CitasBundle\Entity\Observaciones
+            mappedBy: Citas
+    lifecycleCallbacks: {  }

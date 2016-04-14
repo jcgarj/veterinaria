@@ -1,0 +1,39 @@
+Inventario\Bundle\InventarioBundle\Entity\Medicamentos:
+    type: entity
+    table: null
+    repositoryClass: Inventario\Bundle\InventarioBundle\Entity\MedicamentosRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        nombre:
+            type: string
+            length: '30'
+        codigo:
+            type: integer
+        fecha:
+            type: datetime
+        tipo:
+            type: string
+            length: '30'
+        costo:
+            type: integer
+        precio:
+            type: integer
+    manyToOne:
+        Ventas:
+            targetEntity: Inventario\Bundle\InventarioBundle\Entity\Ventas
+            mappedBy: Medicamentos
+        Proveedores:
+            targetEntity: Inventario\Bundle\InventarioBundle\Entity\Proveedores
+            mappedBy: Medicamentos
+        Inventario:
+            targetEntity: Inventario\Bundle\InventarioBundle\Entity\Inventario
+            mappedBy: Medicamentos
+        Producto:
+            targetEntity: Inventario\Bundle\InventarioBundle\Entity\Productos
+            mappedBy: Medicamentos
+    lifecycleCallbacks: {  }

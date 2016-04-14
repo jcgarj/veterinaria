@@ -1,0 +1,88 @@
+{% extends '::base.html.twig' %}
+{% block body -%}
+
+	<div class="container">
+	<div class="col-md-12 col-md-pull-1">			
+		<form action="{{ path ('cliente_create')}}" class="form-horizontal" id="submit_form" method="POST"{{ form_enctype(form) }}>
+						<div class="tab-content">
+							<div class="tab-pane active" id="tab1">
+								<div class="col-md-4">
+									<h1>Registro de Usuario</h1>
+									<p>*Los campos marcado son requeridos</p>	
+									<div class="row">
+										<div class="form-group">
+											{{ form_errors(form.nombre)}}
+								    		{{ form_widget(form.nombre, {attr: {'class':'form-control', 'placeholder':'Nombre*'}})}}
+										</div>
+									</div>
+									<div class="row">
+										<div class="form-group">
+											<label></label>
+											{{ form_errors(form.appat)}}
+							    				{{ form_widget(form.appat, {attr: {'class':'form-control', 'placeholder':'Apellido paterno*'}})}}
+										</div>
+									</div>
+									<div class="row">
+										<div class="form-group">
+											{{ form_errors(form.apmat)}}
+							    			{{ form_widget(form.apmat, {attr: {'class':'form-control', 'placeholder':'Apellido materno*'}})}}
+										</div>
+									</div>
+									<div class="row">
+										<div class="form-group">
+											{{ form_errors(form.calle)}}
+							    			{{ form_widget(form.calle, {attr: {'class':'form-control', 'placeholder':'Calle*'}})}}
+
+										</div>
+									</div>
+									<div class="row">
+										<div class="form-group">
+											{{ form_errors(form.noExt)}}
+							    			{{ form_widget(form.noExt, {attr: {'class':'form-control', 'placeholder':'No.Exterior*'}})}}
+										</div>
+									</div>
+									<div class="row">
+										<div class="form-group">
+											{{ form_errors(form.noInt)}}
+							    			{{ form_widget(form.noInt, {attr: {'class':'form-control', '	placeholder':'No.Interior*'}})}}
+										</div>
+									</div>
+									<div class="row">
+										<div class="form-group">
+											{{ form_errors(form.colonia)}}
+							    			{{ form_widget(form.colonia, {attr: {'class':'form-control', '	placeholder':'Colonia*'}})}}
+										</div>
+									</div>
+									<div class="row">
+										<div class="form-group">
+											{{ form_errors(form.delegacion)}}
+							    			{{ form_widget(form.delegacion, {attr: {'class':'form-control', '	placeholder':'Delegacion*'}})}}
+										</div>
+									</div>
+									<div class="row">
+										<div class="form-group">
+											{{ form_errors(form.telefono)}}
+							    			{{ form_widget(form.telefono, {attr: {'class':'form-control', '	placeholder':'Telefono contraseña*'}})}}
+										</div>
+									</div>
+									<div class="row">
+										<div class="form-group">
+											{{ form_errors(form.correo)}}
+							    			{{ form_widget(form.correo, {attr: {'class':'form-control', '	placeholder':'Correo*'}})}}
+										</div>
+									</div>
+									
+									<br><br>
+										<button id="sig1"  onclick="validarSig1()" class="b sig1" img="img1" href="#tab2" data-toggle="tab"> 
+			              	 				Continuar
+			                            	<i class="fa fa-angle-right"></i>
+			                        	</button>			                       	
+								</div>
+								
+						</div>
+					</div>
+				</form>		
+			</div>
+	</div>	
+
+{% endblock %}

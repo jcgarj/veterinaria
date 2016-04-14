@@ -1,0 +1,4 @@
+services:
+#    inicio.example:
+#        class: Inicio\Bundle\InicioBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]

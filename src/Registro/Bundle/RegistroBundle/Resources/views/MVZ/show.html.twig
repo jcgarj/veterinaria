@@ -1,0 +1,68 @@
+{% extends '::base.html.twig' %}
+
+{% block body -%}
+    <h1>MVZ</h1>
+
+    <table class="record_properties">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ entity.id }}</td>
+            </tr>
+            <tr>
+                <th>Nombre</th>
+                <td>{{ entity.nombre }}</td>
+            </tr>
+            <tr>
+                <th>Appat</th>
+                <td>{{ entity.appat }}</td>
+            </tr>
+            <tr>
+                <th>Apmat</th>
+                <td>{{ entity.apmat }}</td>
+            </tr>
+            <tr>
+                <th>Calle</th>
+                <td>{{ entity.calle }}</td>
+            </tr>
+            <tr>
+                <th>Noext</th>
+                <td>{{ entity.noExt }}</td>
+            </tr>
+            <tr>
+                <th>Noint</th>
+                <td>{{ entity.noInt }}</td>
+            </tr>
+            <tr>
+                <th>Colonia</th>
+                <td>{{ entity.colonia }}</td>
+            </tr>
+            <tr>
+                <th>Delegacion</th>
+                <td>{{ entity.delegacion }}</td>
+            </tr>
+            <tr>
+                <th>Telefono</th>
+                <td>{{ entity.telefono }}</td>
+            </tr>
+            <tr>
+                <th>Correo</th>
+                <td>{{ entity.correo }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+        <ul class="record_actions">
+    <li>
+        <a href="{{ path('mvz') }}">
+            Back to the list
+        </a>
+    </li>
+    <li>
+        <a href="{{ path('mvz_edit', { 'id': entity.id }) }}">
+            Edit
+        </a>
+    </li>
+    <li>{{ form(delete_form) }}</li>
+</ul>
+{% endblock %}

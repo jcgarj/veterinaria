@@ -1,0 +1,52 @@
+Registro\Bundle\RegistroBundle\Entity\cliente:
+    type: entity
+    table: null
+    repositoryClass: Registro\Bundle\RegistroBundle\Entity\clienteRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        nombre:
+            type: string
+            length: '30'
+        appat:
+            type: string
+            length: '30'
+        apmat:
+            type: string
+            length: '30'
+        calle:
+            type: string
+            length: '30'
+        noExt:
+            type: integer
+            column: no_Ext
+        noInt:
+            type: integer
+            column: no_Int
+        colonia:
+            type: string
+            length: '30'
+        delegacion:
+            type: string
+            length: '30'
+        telefono:
+            type: string
+            length: '15'
+        correo:
+            type: string
+            length: '40'
+    oneToMany:
+        mascota:
+            targetEntity: Registro\Bundle\RegistroBundle\Entity\Mascota
+            mappedBy: cliente
+        cita:
+            targetEntity: Citas\Bundle\CitasBundle\Entity\Citas
+            mappedBy: cliente
+        ventas:
+            targetEntity: Inventario\Bundle\InventarioBundle\Entity\Ventas
+            mappedBy: cliente
+    lifecycleCallbacks: {  }

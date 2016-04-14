@@ -1,0 +1,49 @@
+Registro\Bundle\RegistroBundle\Entity\MVZ:
+    type: entity
+    table: null
+    repositoryClass: Registro\Bundle\RegistroBundle\Entity\MVZRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        nombre:
+            type: string
+            length: '30'
+        appat:
+            type: string
+            length: '30'
+        apmat:
+            type: string
+            length: '30'
+        calle:
+            type: string
+            length: '30'
+        noExt:
+            type: integer
+            column: no_ext
+        noInt:
+            type: integer
+            column: no_int
+        colonia:
+            type: string
+            length: '30'
+        delegacion:
+            type: string
+            length: '30'
+        telefono:
+            type: string
+            length: '15'
+        correo:
+            type: string
+            length: '40'
+    oneToMany:
+        Citas:
+            targetEntity: Citas\Bundle\CitasBundle\Entity\Citas
+            mappedBy: MVZ
+        ventas:
+            targetEntity: Inventario\Bundle\InventarioBundle\Entity\Ventas
+            mappedBy: MVZ
+    lifecycleCallbacks: {  }

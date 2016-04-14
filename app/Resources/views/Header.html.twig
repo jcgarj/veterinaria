@@ -1,0 +1,193 @@
+{% extends '::base.html.twig' %}
+{% block Header %}
+<header class="header">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-md-12">
+                        <nav class="navbar navbar-default">
+                            <div class="container-fluid">
+                                <div class="navbar-table">
+                                    <div class="navbar-cell tight">
+                                        <div class="navbar-header">
+                                            <a class="navbar-brand" href="index.html"><img src="{{asset('bundles/Design/images/load.png')}}" alt="Ova"></a>
+                                            <div>
+                                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
+                                                    <span class="sr-only">Toggle navigation</span>
+                                                    <span class="fa fa-bars"></span>
+                                                </button>
+                                            </div>
+                                        </div><!-- end navbar-header -->
+                                    </div><!-- end navbar-cell -->
+
+                                    <div class="navbar-cell stretch">
+                                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+                                            <div class="navbar-cell">
+                                                <ul class="nav navbar-nav navbar-right">
+                                                    <li class="dropdown has-submenu">
+                                                        <a href="#" class="dropdown-toggle active" data-toggle="dropdown" role="button" aria-expanded="false">Home <span class="fa fa-angle-down"></span></a>
+                                                        <ul class="dropdown-menu start-left" role="menu">
+                                                            <li><a href="#">Home Boxed</a></li>
+                                                            <li><a href="#">Home Version 1</a></li>
+                                                            <li><a href="index2.html">Home Version 2</a></li>
+                                                            <li><a href="index3.html">Home Version 3</a></li>
+                                                            <li><a href="index4.html">Home Version 4</a></li>
+                                                            <li><a href="index5.html">Home Version 5</a></li>
+                                                            <li><a href="index6.html">Home Version 6</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li><a href="{{path('cliente_new')}}">Registro de cliente</a></li>
+                                                    <li class="dropdown has-submenu">
+                                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Features <span class="fa fa-angle-down"></span></a>
+                                                        <ul class="dropdown-menu start-left" role="menu">
+                                                            <li><a href="services.html">Our Services</a></li>
+                                                            <li><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Blog Pages <span class="fa fa-angle-right"></span></a>
+                                                                <ul class="dropdown-menu show-left" role="menu">
+                                                                    <li><a href="blog.html">Blog Default</a></li>
+                                                                    <li><a href="blog-1.html">Blog Fullwidth</a></li>
+                                                                    <li><a href="blog-single-1.html">Blog Single</a></li>
+                                                                    <li><a href="blog-single-2.html">Blog Single Alt</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Shop Pages <span class="fa fa-angle-right"></span></a>
+                                                                <ul class="dropdown-menu show-left" role="menu">
+                                                                    <li><a href="shop.html">Shop Page</a></li>
+                                                                    <li><a href="shop-single.html">Shop Single</a></li>
+                                                                    <li><a href="shop-checkout.html">Shop Checkout</a></li>
+                                                                    <li><a href="shop-cart.html">Shopping Cart</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Gallery Pages <span class="fa fa-angle-right"></span></a>
+                                                                <ul class="dropdown-menu show-left" role="menu">
+                                                                    <li><a href="gallery-1.html">Gallery One</a></li>
+                                                                    <li><a href="gallery-2.html">Gallery Two</a></li>
+                                                                    <li><a href="gallery-3.html">Gallery Three</a></li>
+                                                                    <li><a href="gallery-4.html">Gallery Masonry</a></li>
+                                                                    <li><a href="gallery-single.html">Gallery Single</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Other Pages <span class="fa fa-angle-right"></span></a>
+                                                                <ul class="dropdown-menu show-left" role="menu">
+                                                                    <li><a href="maintenance.html">Maintenance</a></li>
+                                                                    <li><a href="404.html">Not Found (404)</a></li>
+                                                                    <li><a href="page-sidebar.html">Page Sidebar</a></li>
+                                                                    <li><a href="page-fullwidth.html">Page Fullwidth</a></li>
+                                                                    <li><a href="page-sitemap.html">Sitemap</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li><a href="pricing.html">Pricing & Plans</a></li>
+                                                            <li><a href="testimonials.html">Testimonials</a></li>
+                                                            <li><a href="shortcodes.html">Shortcodes</a></li>
+                                                            <li><a href="typography.html">Typography</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li><a href="gallery-1.html">Gallery</a></li>
+                                                    <li><a href="shop.html">Shop</a></li>
+                                                    <li><a href="blog.html">Blog</a></li>
+                                                    <li><a href="appointment.html">Appointment</a></li>
+                                                    <li><a href="contact.html">Contact</a></li>
+                                                </ul>
+                                            </div><!-- end navbar-cell -->
+                                        </div><!-- /.navbar-collapse -->        
+                                    </div><!-- end navbar cell -->
+                                </div><!-- end navbar-table -->
+                            </div><!-- end container fluid -->
+                        </nav><!-- end navbar -->
+                    </div><!-- end col -->
+                </div><!-- end row -->
+            </div><!-- end container -->
+        </header>
+        <div id="wrapper">
+        <div class="slider-section">
+            <div class="tp-banner-container">
+                <div class="tp-banner">
+                    <ul>
+                        <li data-transition="fade" data-slotamount="1" data-masterspeed="500" data-thumb="upload/slider_04.jpg"  data-saveperformance="off"  data-title="Vet">
+                            <img src="{{asset('bundles/Design/upload/slider_04.jpg')}}"  alt="fullslide1"  data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
+                            <div class="tp-caption slider_layer_01 text-center lft tp-resizeme"
+                                data-x="center"
+                                data-y="262" 
+                                data-speed="1000"
+                                data-start="600"
+                                data-easing="Power3.easeInOut"
+                                data-splitin="none"
+                                data-splitout="none"
+                                data-elementdelay="0.1"
+                                data-endelementdelay="0.1"
+                                data-endspeed="1000"
+                                style="z-index: 9; max-width: auto; max-height: auto; white-space: nowrap;">Creative <strong>Team</strong>, Professional <strong>Clinic</strong>
+                            </div>
+                            <div class="tp-caption slider_layer_02 text-center lft tp-resizeme"
+                                data-x="center"
+                                data-y="355" 
+                                data-speed="1000"
+                                data-start="800"
+                                data-easing="Power3.easeInOut"
+                                data-splitin="none"
+                                data-splitout="none"
+                                data-elementdelay="0.1"
+                                data-endelementdelay="0.1"
+                                data-endspeed="1000"
+                                style="z-index: 9; max-width: auto; max-height: auto; white-space: nowrap;">Great Theme For Pet Shop, Veterinarian Websites with tons of options<br> custom elements and custom sections!
+                            </div>
+                            <div class="tp-caption slider_btn text-center lft tp-resizeme"
+                                data-x="center"
+                                data-y="440" 
+                                data-speed="1000"
+                                data-start="1000"
+                                data-easing="Power3.easeInOut"
+                                data-splitin="none"
+                                data-splitout="none"
+                                data-elementdelay="0.1"
+                                data-endelementdelay="0.1"
+                                data-endspeed="1000"
+                                style="z-index: 9; max-width: auto; max-height: auto; white-space: nowrap;">
+                            </div>
+                        </li>
+                        <li data-transition="fade" data-slotamount="1" data-masterspeed="500" data-thumb="upload/slider_03.jpg"  data-saveperformance="off"  data-title="Vet">
+                            <img src="{{ asset('bundles/Design/upload/slider_03.jpg')}}"  alt="fullslide1"  data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
+                            <div class="tp-caption slider_layer_01 text-center lft tp-resizeme"
+                                data-x="center"
+                                data-y="262" 
+                                data-speed="1000"
+                                data-start="600"
+                                data-easing="Power3.easeInOut"
+                                data-splitin="none"
+                                data-splitout="none"
+                                data-elementdelay="0.1"
+                                data-endelementdelay="0.1"
+                                data-endspeed="1000"
+                                style="z-index: 9; max-width: auto; max-height: auto; white-space: nowrap;">Happy Pets Happy Clients
+                            </div>
+                            <div class="tp-caption slider_layer_02 text-center lft tp-resizeme"
+                                data-x="center"
+                                data-y="355" 
+                                data-speed="1000"
+                                data-start="800"
+                                data-easing="Power3.easeInOut"
+                                data-splitin="none"
+                                data-splitout="none"
+                                data-elementdelay="0.1"
+                                data-endelementdelay="0.1"
+                                data-endspeed="1000"
+                                style="z-index: 9; max-width: auto; max-height: auto; white-space: nowrap;">Great Theme For Pet Shop, Veterinarian Websites with tons of options<br> custom elements and custom sections!
+                            </div>
+                            <div class="tp-caption slider_btn text-center lft tp-resizeme"
+                                data-x="center"
+                                data-y="440" 
+                                data-speed="1000"
+                                data-start="1000"
+                                data-easing="Power3.easeInOut"
+                                data-splitin="none"
+                                data-splitout="none"
+                                data-elementdelay="0.1"
+                                data-endelementdelay="0.1"
+                                data-endspeed="1000"
+                                style="z-index: 9; max-width: auto; max-height: auto; white-space: nowrap;">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+{% endblock %}

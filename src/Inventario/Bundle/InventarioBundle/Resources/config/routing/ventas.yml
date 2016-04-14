@@ -1,0 +1,30 @@
+ventas:
+    path:     /
+    defaults: { _controller: "InventarioBundle:Ventas:index" }
+
+ventas_show:
+    path:     /{id}/show
+    defaults: { _controller: "InventarioBundle:Ventas:show" }
+
+ventas_new:
+    path:     /new
+    defaults: { _controller: "InventarioBundle:Ventas:new" }
+
+ventas_create:
+    path:     /create
+    defaults: { _controller: "InventarioBundle:Ventas:create" }
+    methods:  POST
+
+ventas_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "InventarioBundle:Ventas:edit" }
+
+ventas_update:
+    path:     /{id}/update
+    defaults: { _controller: "InventarioBundle:Ventas:update" }
+    methods:  [POST, PUT]
+
+ventas_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "InventarioBundle:Ventas:delete" }
+    methods:  [POST, DELETE]

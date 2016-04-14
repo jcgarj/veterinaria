@@ -1,0 +1,113 @@
+<?php
+
+namespace Citas\Bundle\CitasBundle\Entity;
+
+/**
+ * Citas
+ */
+class Citas
+{
+    /**
+     * @var integer
+     */
+    private $id;
+
+    /**
+     * @var \DateTime
+     */
+    private $fecha;
+
+    /**
+     * @var string
+     */
+    private $motivo;
+
+    /**
+     * @var integer
+     */
+    private $costo;
+
+
+    /**
+     * Get id
+     *
+     * @return integer
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * Set fecha
+     *
+     * @param \DateTime $fecha
+     *
+     * @return Citas
+     */
+    public function setFecha($fecha)
+    {
+        $this->fecha = $fecha;
+
+        return $this;
+    }
+
+    /**
+     * Get fecha
+     *
+     * @return \DateTime
+     */
+    public function getFecha()
+    {
+        return $this->fecha;
+    }
+
+    /**
+     * Set motivo
+     *
+     * @param string $motivo
+     *
+     * @return Citas
+     */
+    public function setMotivo($motivo)
+    {
+        $this->motivo = $motivo;
+
+        return $this;
+    }
+
+    /**
+     * Get motivo
+     *
+     * @return string
+     */
+    public function getMotivo()
+    {
+        return $this->motivo;
+    }
+
+    /**
+     * Set costo
+     *
+     * @param integer $costo
+     *
+     * @return Citas
+     */
+    public function setCosto($costo)
+    {
+        $this->costo = $costo;
+
+        return $this;
+    }
+
+    /**
+     * Get costo
+     *
+     * @return integer
+     */
+    public function getCosto()
+    {
+        return $this->costo;
+    }
+}
+

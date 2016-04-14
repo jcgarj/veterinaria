@@ -1,0 +1,142 @@
+<?php
+
+namespace Inventario\Bundle\InventarioBundle\Entity;
+
+/**
+ * Productos
+ */
+class Productos
+{
+    /**
+     * @var integer
+     */
+    private $id;
+
+    /**
+     * @var string
+     */
+    private $nombre;
+
+    /**
+     * @var integer
+     */
+    private $costo;
+
+    /**
+     * @var integer
+     */
+    private $precio;
+
+    /**
+     * @var \DateTime
+     */
+    private $fecha;
+
+
+    /**
+     * Get id
+     *
+     * @return integer
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * Set nombre
+     *
+     * @param string $nombre
+     *
+     * @return Productos
+     */
+    public function setNombre($nombre)
+    {
+        $this->nombre = $nombre;
+
+        return $this;
+    }
+
+    /**
+     * Get nombre
+     *
+     * @return string
+     */
+    public function getNombre()
+    {
+        return $this->nombre;
+    }
+
+    /**
+     * Set costo
+     *
+     * @param integer $costo
+     *
+     * @return Productos
+     */
+    public function setCosto($costo)
+    {
+        $this->costo = $costo;
+
+        return $this;
+    }
+
+    /**
+     * Get costo
+     *
+     * @return integer
+     */
+    public function getCosto()
+    {
+        return $this->costo;
+    }
+
+    /**
+     * Set precio
+     *
+     * @param integer $precio
+     *
+     * @return Productos
+     */
+    public function setPrecio($precio)
+    {
+        $this->precio = $precio;
+
+        return $this;
+    }
+
+    /**
+     * Get precio
+     *
+     * @return integer
+     */
+    public function getPrecio()
+    {
+        return $this->precio;
+    }
+
+    /**
+     * Set fecha
+     *
+     * @param \DateTime $fecha
+     *
+     * @return Productos
+     */
+    public function setFecha($fecha)
+    {
+        $this->fecha = $fecha;
+
+        return $this;
+    }
+
+    /**
+     * Get fecha
+     *
+     * @return \DateTime
+     */
+    public function getFecha()
+    {
+        return $this->fecha;
+    }
+}
+

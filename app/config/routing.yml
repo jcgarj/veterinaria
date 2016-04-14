@@ -1,0 +1,16 @@
+inicio:
+    resource: "@InicioBundle/Resources/config/routing.yml"
+    prefix:   /
+
+citas:
+    resource: "@CitasBundle/Resources/config/routing.yml"
+    prefix:   /
+
+inventario:
+    resource: "@InventarioBundle/Resources/config/routing.yml"
+    prefix:   /
+
+registro:
+    resource: "@RegistroBundle/Resources/config/routing.yml"
+    prefix:   /
+

@@ -1,0 +1,15 @@
+registro_mvz:
+    resource: "@RegistroBundle/Resources/config/routing/mvz.yml"
+    prefix:   /mvz
+
+registro_mascota:
+    resource: "@RegistroBundle/Resources/config/routing/mascota.yml"
+    prefix:   /mascota
+
+registro_cliente:
+    resource: "@RegistroBundle/Resources/config/routing/cliente.yml"
+    prefix:   /cliente
+
+registro_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: RegistroBundle:Default:index }

@@ -1,0 +1,19 @@
+Citas\Bundle\CitasBundle\Entity\Observaciones:
+    type: entity
+    table: null
+    repositoryClass: Citas\Bundle\CitasBundle\Entity\ObservacionesRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        descripcion:
+            type: string
+            length: '255'
+    manyToOne:
+        Observaciones:
+            targetEntity: Citas\Bundle\CitasBundle\Entity\Citas
+            mappedBy: Observaciones
+    lifecycleCallbacks: {  }

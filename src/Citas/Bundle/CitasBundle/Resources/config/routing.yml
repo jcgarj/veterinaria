@@ -1,0 +1,11 @@
+citas_observaciones:
+    resource: "@CitasBundle/Resources/config/routing/observaciones.yml"
+    prefix:   /observaciones
+
+citas_citas:
+    resource: "@CitasBundle/Resources/config/routing/citas.yml"
+    prefix:   /citas
+
+citas_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: CitasBundle:Default:index }

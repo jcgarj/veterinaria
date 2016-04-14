@@ -1,0 +1,39 @@
+Registro\Bundle\RegistroBundle\Entity\Mascota:
+    type: entity
+    table: null
+    repositoryClass: Registro\Bundle\RegistroBundle\Entity\MascotaRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        nombre:
+            type: string
+            length: '30'
+        peso:
+            type: integer
+        edad:
+            type: integer
+        color:
+            type: string
+            length: '20'
+        especie:
+            type: string
+            length: '30'
+        raza:
+            type: string
+            length: '30'
+    manyToOne:
+        cliente:
+            targetEntity: Registro\Bundle\RegistroBundle\Entity\cliente
+            mappedBy: Mascota
+    oneToMany:
+        Citas:
+            targetEntity: Citas\Bundle\CitasBundle\Entity\Citas
+            mappedBy: Mascota
+        MVZ:
+            targetEntity: Registro\Bundle\RegistroBundle\Entity\MVZ
+            mappedBy: Mascota
+    lifecycleCallbacks: {  }

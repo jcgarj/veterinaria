@@ -1,0 +1,33 @@
+Inventario\Bundle\InventarioBundle\Entity\Ventas:
+    type: entity
+    table: null
+    repositoryClass: Inventario\Bundle\InventarioBundle\Entity\VentasRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        fechaSalida:
+            type: datetime
+            column: fecha_Salida
+        cantidad:
+            type: integer
+        total:
+            type: integer
+    manyToOne:
+        Cliente:
+            targetEntity: Registro\Bundle\RegistroBundle\Entity\cliente
+            mappedBy: Ventas
+        MVZ:
+            targetEntity: Registro\Bundle\RegistroBundle\Entity\MVZ
+            mappedBy: Ventas
+        Medicamentos:
+            targetEntity: Inventario\Bundle\InventarioBundle\Entity\Medicamentos
+            mappedBy: Ventas
+    oneToMany:    
+        Productos: 
+            targetEntity: Inventario\Bundle\InventarioBundle\Entity\Productos
+            mappedBy: Ventas
+    lifecycleCallbacks: {  }

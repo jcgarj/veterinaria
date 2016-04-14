@@ -1,0 +1,4 @@
+services:
+#    citas.example:
+#        class: Citas\Bundle\CitasBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]

@@ -1,0 +1,30 @@
+mascota:
+    path:     /
+    defaults: { _controller: "RegistroBundle:Mascota:index" }
+
+mascota_show:
+    path:     /{id}/show
+    defaults: { _controller: "RegistroBundle:Mascota:show" }
+
+mascota_new:
+    path:     /new
+    defaults: { _controller: "RegistroBundle:Mascota:new" }
+
+mascota_create:
+    path:     /create
+    defaults: { _controller: "RegistroBundle:Mascota:create" }
+    methods:  POST
+
+mascota_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "RegistroBundle:Mascota:edit" }
+
+mascota_update:
+    path:     /{id}/update
+    defaults: { _controller: "RegistroBundle:Mascota:update" }
+    methods:  [POST, PUT]
+
+mascota_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "RegistroBundle:Mascota:delete" }
+    methods:  [POST, DELETE]

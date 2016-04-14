@@ -1,0 +1,22 @@
+Inventario\Bundle\InventarioBundle\Entity\Inventario:
+    type: entity
+    table: null
+    repositoryClass: Inventario\Bundle\InventarioBundle\Entity\InventarioRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        cantidadExist:
+            type: integer
+            column: cantidad_exist
+    oneToMany:
+        Medicamentos: 
+            targetEntity: Inventario\Bundle\InventarioBundle\Entity\Medicamentos
+            mappedBy: Inventario
+        Productos:
+            targetEntity: Inventario\Bundle\InventarioBundle\Entity\Productos
+            mappedBy: Inventario
+    lifecycleCallbacks: {  }

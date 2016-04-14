@@ -1,0 +1,31 @@
+Inventario\Bundle\InventarioBundle\Entity\Productos:
+    type: entity
+    table: null
+    repositoryClass: Inventario\Bundle\InventarioBundle\Entity\ProductosRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        nombre:
+            type: string
+            length: '30'
+        costo:
+            type: integer
+        precio:
+            type: integer
+        fecha:
+            type: datetime
+    manyToOne:
+        Ventas:
+            targetEntity: Inventario\Bundle\InventarioBundle\Entity\Ventas
+            mappedBy: Productos
+        Proveedores:
+            targetEntity: Inventario\Bundle\InventarioBundle\Entity\Proveedores
+            mappedBy: Productos
+        Inventario: 
+            targetEntity: Inventario\Bundle\InventarioBundle\Entity\Inventario
+            mappedBy: Productos
+    lifecycleCallbacks: {  }

@@ -1,0 +1,113 @@
+<?php
+
+namespace Inventario\Bundle\InventarioBundle\Entity;
+
+/**
+ * Proveedores
+ */
+class Proveedores
+{
+    /**
+     * @var integer
+     */
+    private $id;
+
+    /**
+     * @var string
+     */
+    private $regimenT;
+
+    /**
+     * @var string
+     */
+    private $rfc;
+
+    /**
+     * @var string
+     */
+    private $telefono;
+
+
+    /**
+     * Get id
+     *
+     * @return integer
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * Set regimenT
+     *
+     * @param string $regimenT
+     *
+     * @return Proveedores
+     */
+    public function setRegimenT($regimenT)
+    {
+        $this->regimenT = $regimenT;
+
+        return $this;
+    }
+
+    /**
+     * Get regimenT
+     *
+     * @return string
+     */
+    public function getRegimenT()
+    {
+        return $this->regimenT;
+    }
+
+    /**
+     * Set rfc
+     *
+     * @param string $rfc
+     *
+     * @return Proveedores
+     */
+    public function setRfc($rfc)
+    {
+        $this->rfc = $rfc;
+
+        return $this;
+    }
+
+    /**
+     * Get rfc
+     *
+     * @return string
+     */
+    public function getRfc()
+    {
+        return $this->rfc;
+    }
+
+    /**
+     * Set telefono
+     *
+     * @param string $telefono
+     *
+     * @return Proveedores
+     */
+    public function setTelefono($telefono)
+    {
+        $this->telefono = $telefono;
+
+        return $this;
+    }
+
+    /**
+     * Get telefono
+     *
+     * @return string
+     */
+    public function getTelefono()
+    {
+        return $this->telefono;
+    }
+}
+
