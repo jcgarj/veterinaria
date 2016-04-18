@@ -2,6 +2,7 @@
 
 namespace Registro\Bundle\RegistroBundle\Entity;
 
+use Doctrine\ORM\Mapping as ORM;
 /**
  * cliente
  */

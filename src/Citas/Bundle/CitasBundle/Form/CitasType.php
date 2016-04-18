@@ -18,6 +18,9 @@ class CitasType extends AbstractType
             ->add('fecha')
             ->add('motivo')
             ->add('costo')
+            ->add('cliente', 'entity', array(
+                'class' => 'RegistroBundle:cliente',
+                'property' => 'nombre'))
         ;
     }
     

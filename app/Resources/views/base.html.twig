@@ -33,7 +33,156 @@
         <link rel="stylesheet" type="text/css" href="{{ asset('bundles/Design/css/custom.css')}}">
         <script src="{{ asset('bundles/Design/js/modernizer.js')}}"></script>
     </head>
-        {% block Header %}{% endblock %}
+        <header class="header">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-md-12">
+                        <nav class="navbar navbar-default">
+                            <div class="container-fluid">
+                                <div class="navbar-table">
+                                    <div class="navbar-cell tight">
+                                        <div class="navbar-header">
+                                            <a class="navbar-brand" href="index.html"><img src="{{asset('bundles/Design/images/load.png')}}" alt="Ova"></a>
+                                            <div>
+                                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
+                                                    <span class="sr-only">Toggle navigation</span>
+                                                    <span class="fa fa-bars"></span>
+                                                </button>
+                                            </div>
+                                        </div><!-- end navbar-header -->
+                                    </div><!-- end navbar-cell -->
+
+                                    <div class="navbar-cell stretch">
+                                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+                                            <div class="navbar-cell">
+                                                <ul class="nav navbar-nav navbar-right">
+                                                    <li class="dropdown has-submenu">
+                                                        <a href="#" class="dropdown-toggle active" data-toggle="dropdown" role="button" aria-expanded="false">Home <span class="fa fa-angle-down"></span></a>
+                                                        
+                                                    </li>
+                                                    <li><a href="{{path('cliente_new')}}">Registro de cliente</a></li>
+                                                    
+                                                    <li><a href="{{path('mascota_new')}}">Registro de mascota</a></li>
+
+                                                    <li><a href="{{path('mvz_new')}}">Registro de veterinario</a></li>
+                                                    
+                                                    <li><a href="{{path('citas_new')}}">Registro de Citas</a></li>
+
+                                                    <li class="dropdown has-submenu">
+                                                        <a href="#" class="dropdown-toggle active" data-toggle="dropdown" role="button" aria-expanded="false">Productos <span class="fa fa-angle-down"></span></a>
+                                                        <ul class="dropdown-menu start-left" role="menu">
+                                                            <li><a href="{{path('productos_new')}}">Productos</li>
+                                                            <li><a href="{{path('medicamentos_new')}}">medicamenttos</li>
+                                                        </ul>
+                                                    </li>    
+
+                                                    <li><a href="{{path('inventario')}}"> Inventario</a></li>                                               
+                                                           
+                                                </ul>
+                                            </div><!-- end navbar-cell -->
+                                        </div><!-- /.navbar-collapse -->        
+                                    </div><!-- end navbar cell -->
+                                </div><!-- end navbar-table -->
+                            </div><!-- end container fluid -->
+                        </nav><!-- end navbar -->
+                    </div><!-- end col -->
+                </div><!-- end row -->
+            </div><!-- end container -->
+        </header>
+        <div id="wrapper">
+        <div class="slider-section">
+            <div class="tp-banner-container">
+                <div class="tp-banner">
+                    <ul>
+                        <li data-transition="fade" data-slotamount="1" data-masterspeed="500" data-thumb="upload/slider_04.jpg"  data-saveperformance="off"  data-title="Vet">
+                            <img src="{{asset('bundles/Design/upload/slider_04.jpg')}}"  alt="fullslide1"  data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
+                            <div class="tp-caption slider_layer_01 text-center lft tp-resizeme"
+                                data-x="center"
+                                data-y="262" 
+                                data-speed="1000"
+                                data-start="600"
+                                data-easing="Power3.easeInOut"
+                                data-splitin="none"
+                                data-splitout="none"
+                                data-elementdelay="0.1"
+                                data-endelementdelay="0.1"
+                                data-endspeed="1000"
+                                style="z-index: 9; max-width: auto; max-height: auto; white-space: nowrap;">Creative <strong>Team</strong>, Professional <strong>Clinic</strong>
+                            </div>
+                            <div class="tp-caption slider_layer_02 text-center lft tp-resizeme"
+                                data-x="center"
+                                data-y="355" 
+                                data-speed="1000"
+                                data-start="800"
+                                data-easing="Power3.easeInOut"
+                                data-splitin="none"
+                                data-splitout="none"
+                                data-elementdelay="0.1"
+                                data-endelementdelay="0.1"
+                                data-endspeed="1000"
+                                style="z-index: 9; max-width: auto; max-height: auto; white-space: nowrap;">Great Theme For Pet Shop, Veterinarian Websites with tons of options<br> custom elements and custom sections!
+                            </div>
+                            <div class="tp-caption slider_btn text-center lft tp-resizeme"
+                                data-x="center"
+                                data-y="440" 
+                                data-speed="1000"
+                                data-start="1000"
+                                data-easing="Power3.easeInOut"
+                                data-splitin="none"
+                                data-splitout="none"
+                                data-elementdelay="0.1"
+                                data-endelementdelay="0.1"
+                                data-endspeed="1000"
+                                style="z-index: 9; max-width: auto; max-height: auto; white-space: nowrap;">
+                            </div>
+                        </li>
+                        <li data-transition="fade" data-slotamount="1" data-masterspeed="500" data-thumb="upload/slider_03.jpg"  data-saveperformance="off"  data-title="Vet">
+                            <img src="{{ asset('bundles/Design/upload/slider_03.jpg')}}"  alt="fullslide1"  data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
+                            <div class="tp-caption slider_layer_01 text-center lft tp-resizeme"
+                                data-x="center"
+                                data-y="262" 
+                                data-speed="1000"
+                                data-start="600"
+                                data-easing="Power3.easeInOut"
+                                data-splitin="none"
+                                data-splitout="none"
+                                data-elementdelay="0.1"
+                                data-endelementdelay="0.1"
+                                data-endspeed="1000"
+                                style="z-index: 9; max-width: auto; max-height: auto; white-space: nowrap;">Happy Pets Happy Clients
+                            </div>
+                            <div class="tp-caption slider_layer_02 text-center lft tp-resizeme"
+                                data-x="center"
+                                data-y="355" 
+                                data-speed="1000"
+                                data-start="800"
+                                data-easing="Power3.easeInOut"
+                                data-splitin="none"
+                                data-splitout="none"
+                                data-elementdelay="0.1"
+                                data-endelementdelay="0.1"
+                                data-endspeed="1000"
+                                style="z-index: 9; max-width: auto; max-height: auto; white-space: nowrap;">Great Theme For Pet Shop, Veterinarian Websites with tons of options<br> custom elements and custom sections!
+                            </div>
+                            <div class="tp-caption slider_btn text-center lft tp-resizeme"
+                                data-x="center"
+                                data-y="440" 
+                                data-speed="1000"
+                                data-start="1000"
+                                data-easing="Power3.easeInOut"
+                                data-splitin="none"
+                                data-splitout="none"
+                                data-elementdelay="0.1"
+                                data-endelementdelay="0.1"
+                                data-endspeed="1000"
+                                style="z-index: 9; max-width: auto; max-height: auto; white-space: nowrap;">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
     <body>
         {% block body %}{% endblock %}
 

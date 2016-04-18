@@ -399,5 +399,8 @@ class MVZ
         return $this->ventas;
     }
     
+    public function __toString(){
+        return $this->nombre;
+    }
     
 }

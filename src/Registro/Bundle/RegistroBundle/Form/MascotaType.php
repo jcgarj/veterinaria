@@ -21,6 +21,12 @@ class MascotaType extends AbstractType
             ->add('color')
             ->add('especie')
             ->add('raza')
+            ->add('cliente', 'entity', array(
+                'class' => 'RegistroBundle:cliente',
+                'property' => 'nombre'))
+            ->add('MVZ', 'entity', array(
+                'class' => 'RegistroBundle:MVZ',
+                'property' => 'nombre'))
         ;
     }
     

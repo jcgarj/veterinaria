@@ -1,15 +1,231 @@
-{% extends '::base.html.twig' %}
-
+{#{% extends '::base.html.twig' %}#}
 {% block body -%}
-    <h1>MVZ creation</h1>
 
-    {{ form(form) }}
+{% block style %}
+	<link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+        <link rel="apple-touch-icon" href="{{ asset('images/apple-touch-icon.png')}}" />
+        <link rel="apple-touch-icon" sizes="57x57" href="{{asset('Bundle/Design/images/apple-touch-icon-57x57.png')}}">
+        <link rel="apple-touch-icon" sizes="72x72" href="{{asset('bundle/Design/images/apple-touch-icon-72x72.png')}}">
+        <link rel="apple-touch-icon" sizes="76x76" href="{{asset('bundle/Design/images/apple-touch-icon-76x76.png')}}">
+        <link rel="apple-touch-icon" sizes="114x114" href="{{asset('bundle/Design/images/apple-touch-icon-114x114.png')}}">
+        <link rel="apple-touch-icon" sizes="120x120" href="{{asset('bundle/Design/images/apple-touch-icon-120x120.png')}}">
+        <link rel="apple-touch-icon" sizes="144x144" href="{{asset('bundle/Design/images/apple-touch-icon-144x144.png')}}">
+        <link rel="apple-touch-icon" sizes="152x152" href="{{asset('bundle/Design/images/apple-touch-icon-152x152.png')}}">
 
-        <ul class="record_actions">
-    <li>
-        <a href="{{ path('mvz') }}">
-            Back to the list
-        </a>
-    </li>
-</ul>
+        <link rel="stylesheet" type="text/css" href="{{ asset('bundles/Design/rs-plugin/css/settings.css')}}" media="screen" />
+        <link rel="stylesheet" type="text/css" href="{{ asset('bundles/Design/css/animate.css')}}">
+        <link rel="stylesheet" type="text/css" href="{{ asset('bundles/Design/css/bootstrap.css')}}">
+        <link rel="stylesheet" type="text/css" href="{{ asset('bundles/Design/css/carousel.css')}}">
+        <link rel="stylesheet" type="text/css" href="{{ asset('bundles/Design/css/prettyPhoto.css')}}">
+        <link rel="stylesheet" type="text/css" href="{{ asset('bundles/Design/style.css')}}">
+            <!-- COLORS -->
+        <link rel="stylesheet" type="text/css" href="{{ asset('bundles/Design/css/custom.css')}}">
+        
+<header class="header">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-md-12">
+                        <nav class="navbar navbar-default">
+                            <div class="container-fluid">
+                                <div class="navbar-table">
+                                    <div class="navbar-cell tight">
+                                        <div class="navbar-header">
+                                            <a class="navbar-brand" href="index.html"><img src="{{asset('bundles/Design/images/load.png')}}" alt="Ova"></a>
+                                            <div>
+                                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
+                                                    <span class="sr-only">Toggle navigation</span>
+                                                    <span class="fa fa-bars"></span>
+                                                </button>
+                                            </div>
+                                        </div><!-- end navbar-header -->
+                                    </div><!-- end navbar-cell -->
+
+                                    <div class="navbar-cell stretch">
+                                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+                                            <div class="navbar-cell">
+                                                <ul class="nav navbar-nav navbar-right">
+                                                    <li class="dropdown has-submenu">
+                                                        <a href="#" class="dropdown-toggle active" data-toggle="dropdown" role="button" aria-expanded="false">Home <span class="fa fa-angle-down"></span></a>
+                                                    </li>
+                                                    <li><a href="{{path('cliente_new')}}">Registro de cliente</a></li>
+                                                    
+                                                    <li><a href="{{path('mascota_new')}}">Registro de mascota</a></li>
+
+                                                    <li><a href="{{path('mvz_new')}}">Registro de veterinario</a></li>
+                                                    
+                                                    <li><a href="{{path('citas_new')}}">Registro de Citas</a></li>    
+
+                                                    <li><a href="{{path('inventario')}}"> Inventario</a></li>
+                                                    <li>
+                                                        <ul>
+                                                            <li><a href="{{path('productos_new')}}">Productos</li>
+                                                            <li><a href="{{path('medicamentos_new')}}">medicamenttos</li>
+                                                        </ul>
+                                                    </li>
+                                                    
+                                                </ul>
+                                            </div><!-- end navbar-cell -->
+                                        </div><!-- /.navbar-collapse -->        
+                                    </div><!-- end navbar cell -->
+                                </div><!-- end navbar-table -->
+                            </div><!-- end container fluid -->
+                        </nav><!-- end navbar -->
+                    </div><!-- end col -->
+                </div><!-- end row -->
+            </div><!-- end container -->
+        </header>
+        <div id="wrapper">
+        <div class="slider-section">
+            <div class="tp-banner-container">
+                <div class="tp-banner">
+                    <ul>
+                            <div class="tp-caption slider_layer_02 text-center lft tp-resizeme"
+                                data-x="center"
+                                data-y="355" 
+                                data-speed="1000"
+                                data-start="800"
+                                data-easing="Power3.easeInOut"
+                                data-splitin="none"
+                                data-splitout="none"
+                                data-elementdelay="0.1"
+                                data-endelementdelay="0.1"
+                                data-endspeed="1000"
+                                style="z-index: 9; max-width: auto; max-height: auto; white-space: nowrap;">Great Theme For Pet Shop, Veterinarian Websites with tons of options<br> custom elements and custom sections!
+                            </div>
+                            <div class="tp-caption slider_btn text-center lft tp-resizeme"
+                                data-x="center"
+                                data-y="440" 
+                                data-speed="1000"
+                                data-start="1000"
+                                data-easing="Power3.easeInOut"
+                                data-splitin="none"
+                                data-splitout="none"
+                                data-elementdelay="0.1"
+                                data-endelementdelay="0.1"
+                                data-endspeed="1000"
+                                style="z-index: 9; max-width: auto; max-height: auto; white-space: nowrap;">
+                            </div>
+                        </li>
+                        <li data-transition="fade" data-slotamount="1" data-masterspeed="500" data-thumb="upload/slider_03.jpg"  data-saveperformance="off"  data-title="Vet">
+                            <img src="{{ asset('bundles/Design/upload/slider_03.jpg')}}"  alt="fullslide1"  data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
+                            
+                           
+                            <div class="tp-caption slider_btn text-center lft tp-resizeme"
+                                data-x="center"
+                                data-y="440" 
+                                data-speed="1000"
+                                data-start="1000"
+                                data-easing="Power3.easeInOut"
+                                data-splitin="none"
+                                data-splitout="none"
+                                data-elementdelay="0.1"
+                                data-endelementdelay="0.1"
+                                data-endspeed="1000"
+                                style="z-index: 9; max-width: auto; max-height: auto; white-space: nowrap;">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+{% endblock %}		
+	<div class="container">
+	<div class="col-md-12 col-md-pull-1">			
+		<form action="{{ path ('mascota_create')}}" class="form-horizontal" id="submit_form" method="POST"{ form_start(form) }
+						<div class="tab-content">
+							
+								<div class="col-md-4">
+									<h1>Registro de Veterinario</h1>
+									<p>*Los campos marcado son requeridos</p>	
+									<div class="row">
+										<div class="form-group">
+											{{ form_errors(form.nombre)}}
+								    		{{ form_widget(form.nombre, {attr: {'class':'form-control', 'placeholder':'Nombre*'}})}}
+										</div>
+									</div>
+									<br>
+									<div class="row">
+										<div class="form-group">
+											<label></label>
+											{{ form_errors(form.appat)}}
+							    				{{ form_widget(form.appat, {attr: {'class':'form-control', 'placeholder':'Paterno *'}})}}
+										</div>
+									</div>
+									<br>
+									<div class="row">
+										<div class="form-group">
+											{{ form_errors(form.apmat)}}
+							    			{{ form_widget(form.apmat, {attr: {'class':'form-control', 'placeholder':'Materno*'}})}}
+										</div>
+									</div>
+									<br>
+									<div class="row">
+										<div class="form-group">
+											{{ form_errors(form.calle)}}
+							    			{{ form_widget(form.calle, {attr: {'class':'form-control', 'placeholder':'Calle*'}})}}
+
+										</div>
+									</div>
+									<br>
+									<div class="row">
+										<div class="form-group">
+											{{ form_errors(form.noExt)}}
+							    			{{ form_widget(form.noExt, {attr: {'class':'form-control', 'placeholder':'No.Ext*'}})}}
+										</div>
+									</div>
+									<br>
+									<div class="row">
+										<div class="form-group">
+											{{ form_errors(form.noInt)}}
+							    			{{ form_widget(form.noInt, {attr: {'class':'form-control', '	placeholder':'No.Int*'}})}}
+										</div>
+									</div>
+									<br>
+									<div class="row">
+										<div class="form-group">
+											{{ form_errors(form.colonia)}}
+							    			{{ form_widget(form.colonia, {attr: {'class':'form-control', '	placeholder':'colonia*'}})}}
+										</div>
+									</div>
+									<div class="row">
+										<div class="form-group">
+											{{ form_errors(form.delegacion)}}
+							    			{{ form_widget(form.delegacion, {attr: {'class':'form-control', '	placeholder':'delegacion*'}})}}
+										</div>
+									</div>
+									<br>
+
+									<div class="row">
+										<div class="form-group">
+											{{ form_errors(form.telefono)}}
+							    			{{ form_widget(form.telefono, {attr: {'class':'form-control', '	placeholder':'telefono*'}})}}
+										</div>
+									</div>
+									<div class="row">
+										<div class="form-group">
+											{{ form_errors(form.correo)}}
+							    			{{ form_widget(form.correo, {attr: {'class':'form-control', '	placeholder':'correo*'}})}}
+										</div>
+									</div>
+									<div class="col-md-12 col-md-push-5">
+										<div class="row">
+											<br><br>
+											{{ form_widget(form._token) }}
+											<button id="sig1"  onclick="validarSig1()" class="b sig1" img="img1" href="#tab2" data-toggle="tab"> 
+				              	 				Guardar Registro
+				                            	<i class="fa fa-angle-right"></i>
+				                        	</button>
+										</div>
+									</div>                       	
+								</div>
+							
+						</div>
+					</div>
+				</form>		
+			</div>
+	</div>	
+
 {% endblock %}
